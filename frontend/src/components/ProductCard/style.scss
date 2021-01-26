@@ -1,0 +1,50 @@
+.details-card {
+  display: flex;
+  flex-direction: row;
+  max-width: 80rem;
+  margin: 0 auto 0rem;
+  background-color: #f0f5f6;
+  border-radius: 8px;
+
+  img {
+    height: 40rem;
+    margin: 0 auto 0 0;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 2rem 1rem;
+    padding: 3rem;
+
+    .name {
+      font-weight: bold;
+      font-size: 30px;
+      /* align-self: center; */
+      margin-bottom: 1rem;
+    }
+
+    .details {
+      padding: 2rem 0;
+      font-size: 12px;
+    }
+
+    .actions {
+      .stock {
+        .label {
+          font-weight: bold;
+        }
+
+        .out-of-stock {
+          color: #eb2e35;
+          font-size: 12px;
+        }
+      }
+
+      .addToCart {
+        max-width: 20rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}

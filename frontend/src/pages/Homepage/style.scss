@@ -1,0 +1,14 @@
+.main {
+  padding: 2rem;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .products {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+  }
+}

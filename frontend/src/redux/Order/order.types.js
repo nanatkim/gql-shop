@@ -1,0 +1,8 @@
+const orderTypes = {
+  FETCH_ORDERS_START: "FETCH_ORDERS_START",
+  SET_ORDERS: "SET_ORDERS",
+  CREATE_ORDER_START: "CREATE_ORDER_START",
+  SET_STATUS: "SET_STATUS",
+};
+
+export default orderTypes;

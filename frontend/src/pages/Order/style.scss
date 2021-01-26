@@ -1,0 +1,24 @@
+.order-history {
+  margin: 0 3rem;
+
+  .order {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #eb2e35;
+    padding: 1rem 0;
+
+    .items {
+      .item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        span:first-child {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

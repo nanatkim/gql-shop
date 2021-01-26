@@ -1,0 +1,24 @@
+.error-handler {
+  padding: 3rem 5rem 0 5rem;
+
+  .error {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: #ffd7d9;
+    padding: 1rem;
+    border-radius: 8px;
+
+    .msg {
+      color: #eb2e35;
+    }
+
+    button {
+      background: inherit;
+      border: solid 1px #eb2e35;
+      color: #eb2e35;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  }
+}

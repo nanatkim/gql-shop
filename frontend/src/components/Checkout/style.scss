@@ -1,0 +1,48 @@
+.shopping-cart {
+  width: 750px;
+  margin: 80px auto;
+  background: #ffffff;
+  box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    height: 60px;
+    border-bottom: 1px solid #e1e8ee;
+    padding: 20px 30px;
+    color: #eb2e35;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .warning {
+    display: flex;
+    justify-content: center;
+    margin: 10rem auto;
+    align-items: center;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      background: #eb2e35;
+      padding: 0.5rem;
+      border-radius: 5px;
+      margin: 0 1rem;
+    }
+  }
+
+  .total {
+    margin: 1rem 0 1rem 1rem;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+
+    button:first-child {
+      margin-right: 1rem;
+    }
+  }
+}

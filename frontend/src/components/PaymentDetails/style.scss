@@ -1,0 +1,45 @@
+.payment-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .form-wrap {
+    background-color: #f0f5f6;
+    padding: 32px;
+    border-radius: 8px;
+  }
+
+  .summary {
+    background-color: #f0f5f6;
+    padding: 32px;
+    border-radius: 8px;
+
+    .title {
+      color: #eb2e35;
+      font-weight: bold;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 1rem 0;
+
+      .values {
+        margin-left: 5rem;
+
+        .price {
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    .total {
+      border-top: 1px solid #eb2e35;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 1rem;
+    }
+  }
+}
