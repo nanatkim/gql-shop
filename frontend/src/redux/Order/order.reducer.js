@@ -13,8 +13,6 @@ const orderReducer = (state = INITIAL_STATE, action) => {
         orders: action.payload,
       };
     case orderTypes.SET_STATUS:
-      console.log(action.payload);
-
       return {
         ...state,
         status: action.payload,

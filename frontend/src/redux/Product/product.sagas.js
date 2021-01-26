@@ -13,7 +13,6 @@ export function* onFetchProductsStart() {
 }
 
 export function* fetchProduct({ payload }) {
-  console.log(payload);
   const product = yield handleFetchProduct(payload);
   yield put(setProduct(product));
 }
