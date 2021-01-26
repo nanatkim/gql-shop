@@ -7,8 +7,7 @@ import {
   selectCartItems,
 } from "./../../redux/Cart/cart.selectors";
 import { clearCart } from "../../redux/Cart/cart.actions";
-import { clearErrors } from "../../redux/Error/error.actions";
-import { createOrdertStart } from "../../redux/Order/order.actions";
+import { createOrdertStart, setStatus } from "../../redux/Order/order.actions";
 import FormInput from "../forms/FormInput";
 import Button from "../forms/Button";
 import "./style.scss";
@@ -41,6 +40,7 @@ const PaymentDetails = () => {
     if (status) {
       resetForm();
       dispatch(clearCart());
+      dispatch(setStatus(false));
       history.push("/history");
     }
 
