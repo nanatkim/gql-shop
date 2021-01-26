@@ -41,7 +41,7 @@ const PaymentDetails = () => {
     if (status) {
       resetForm();
       dispatch(clearCart());
-      history.push("/");
+      history.push("/history");
     }
 
     // eslint-disable-next-line
@@ -83,9 +83,14 @@ const PaymentDetails = () => {
               <span>{item.name}</span>
               <div className="values">
                 <span>x{item.cartQtty}</span>
-                <span className="price">
+                <div className="price">
                   {item.price && formatMoney(item.price)}
-                </span>
+                  <span>Unid.</span>
+                </div>
+                <div className="price">
+                  {item.price && formatMoney(item.price * item.cartQtty)}
+                  <span>Total</span>
+                </div>
               </div>
             </div>
           );
