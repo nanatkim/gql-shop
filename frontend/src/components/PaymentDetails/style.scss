@@ -33,13 +33,16 @@
       .values {
         display: flex;
         flex-direction: row;
-        margin-left: 5rem;
+        justify-content: space-between;
+        min-width: 60%;
 
         .price {
           display: flex;
           flex-direction: column;
           margin-left: 2rem;
-          text-align: center span {
+          text-align: center;
+
+          span {
             display: block;
             font-size: 14px;
             color: #43484d;
