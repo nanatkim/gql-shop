@@ -43,4 +43,7 @@ npm start
 ```
 
 > **Aplicação web:** [http://localhost:3000](http://localhost:3000)
-> **Cartão de crédito sempre aceito:** 1111111111111111
+
+Cartão de crédito sempre aceito:
+
+> 1111111111111111
