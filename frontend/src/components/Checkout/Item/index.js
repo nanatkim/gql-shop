@@ -62,12 +62,7 @@ const Item = (product) => {
         </button>
       </div>
       <div className="total-price">
-        {price && formatMoney(price)}
-        <span>Unid.</span>
-      </div>
-      <div className="total-price">
         {price && formatMoney(price * cartQtty)}
-        <span>Total</span>
       </div>
     </div>
   );

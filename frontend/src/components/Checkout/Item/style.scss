@@ -1,6 +1,7 @@
 .cart-item {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem 3rem;
   border-top: 1px solid #e1e8ee;
@@ -76,10 +77,4 @@
   color: #43484d;
   font-weight: 300;
   margin-left: 2rem;
-
-  span {
-    font-size: 12px;
-    font-weight: 300;
-    color: #86939e;
-  }
 }

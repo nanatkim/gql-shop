@@ -24,9 +24,7 @@ const Checkout = () => {
   return (
     <div>
       <div className="shopping-cart">
-        <div className="title">
-          <i className="fas fa-shopping-cart"></i> Resumo do carrinho
-        </div>
+        <div className="title">Resumo do carrinho</div>
         {cartItems.length > 0 ? (
           <React.Fragment>
             {cartItems.map((item, index) => {
@@ -38,7 +36,9 @@ const Checkout = () => {
             })}
 
             <div className="total">
-              <span>Total: </span>
+              <span className="icon">
+                <i className="fas fa-shopping-cart"></i>
+              </span>
               <span>{total && formatMoney(total)}</span>
             </div>
             <div className="actions">
