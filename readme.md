@@ -1,6 +1,6 @@
 ## GQL Shop
 
-Esta é uma aplicação fullstack que simula o funcionamento de um carrinho de compras desenvolvido Reactjs, Express e GraphQL com Apollo e TypeORM.
+Esta é uma aplicação fullstack que simula o funcionamento de um carrinho de compras desenvolvido Reactjs, Nodejs e GraphQL com Apollo e TypeORM.
 
 ### Instruções para a inicialização do projeto
 
