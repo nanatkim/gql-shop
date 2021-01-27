@@ -22,7 +22,9 @@ const Header = () => {
           </Link>
         </div>
       </div>
-      <div className="title">V IV I</div>
+      <div className="title">
+        <Link to="/">V IV I</Link>
+      </div>
       <ul className="list">
         <li className="item">
           <Link to="/cart">
