@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 import { clearErrors } from "../../redux/Error/error.actions";
 import { fetchOrdersStart } from "../../redux/Order/order.actions";
@@ -25,25 +26,32 @@ const Order = () => {
 
   return (
     <div className="order-history">
-      {orders.map((item, index) => {
-        return (
-          <div className="order" key={index}>
-            <div className="id">ORDER ID#{item.id}</div>
-            <div className="customer">{item.customer}</div>
-            <div className="items">
-              {item.products.map((product, pi) => {
-                return (
-                  <div className="item" key={pi}>
-                    <span>{product.product.name}</span>
-                    <span>x {product.qtty}</span>
-                  </div>
-                );
-              })}
+      {orders.length > 0 ? (
+        orders.map((item, index) => {
+          return (
+            <div className="order" key={index}>
+              <div className="id">ORDER ID#{item.id}</div>
+              <div className="customer">{item.customer}</div>
+              <div className="items">
+                {item.products.map((product, pi) => {
+                  return (
+                    <div className="item" key={pi}>
+                      <span>{product.product.name}</span>
+                      <span>x {product.qtty}</span>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className="total">{formatMoney(item.total)}</div>
             </div>
-            <div className="total">{formatMoney(item.total)}</div>
-          </div>
-        );
-      })}
+          );
+        })
+      ) : (
+        <div className="warning">
+          Você ainda não fez nenhuma compra! Clique <Link to="/">aqui</Link>{" "}
+          para voltar para a página principal.
+        </div>
+      )}
     </div>
   );
 };
