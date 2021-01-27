@@ -15,11 +15,11 @@ export const checkAddProduct = (nextCartItem) => (dispatch, getState) => {
       (cartItem) => cartItem.id === nextCartItem.id
     );
 
-    const { id, qtty } = existingCartItem;
+    const { name, qtty } = existingCartItem;
     if (qtty === 0) {
       dispatch(
         setErrors([
-          { message: `Product #${id} is out of stock for current quantity` },
+          { message: `Product "${name}" is out of stock for current quantity` },
         ])
       );
     } else {
