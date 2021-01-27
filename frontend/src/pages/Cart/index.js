@@ -5,10 +5,6 @@ import { clearErrors } from "../../redux/Error/error.actions";
 import Checkout from "../../components/Checkout";
 import "./style.scss";
 
-const mapState = ({ ordersData }) => ({
-  orders: ordersData.orders,
-});
-
 const Cart = () => {
   const dispatch = useDispatch();
 
