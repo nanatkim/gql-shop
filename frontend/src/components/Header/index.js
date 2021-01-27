@@ -22,6 +22,7 @@ const Header = () => {
           </Link>
         </div>
       </div>
+      <div className="title">V IV I</div>
       <ul className="list">
         <li className="item">
           <Link to="/cart">
